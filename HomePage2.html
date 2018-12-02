@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel|Montserrat|Patua+One"
+	rel="stylesheet">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background: #eee;
+		}
+		.bg-image{
+			width: 100%;
+			height: 600px;
+			background: url('girls.jpg') no-repeat 50% 20%;
+		}
+		.bw-gradient{
+			width: 100%;
+			height: 600px;
+			position: absolute;
+			background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
+			background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
+			background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#000000', endColorstr='#00000000',GradientType=0 );
+		}
+		.container{
+			width: 960px;
+			height: 600px;
+			position: relative;
+			margin: 0 auto;
+		}
+		.header{
+			width: 960px;
+			padding: 20px;
+		}
+		nav>ul{
+			position: absolute;
+			right: 150px;
+		}
+		nav>ul>li{
+			list-style: none;
+			float: left;
+			height: 40px;
+			line-height: 40px;
+		}
+		nav>ul>li>a{
+			text-decoration: none;
+			font-family: 'Abel', sans-serif
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 0 20px 0 20px;
+		}
+		button{
+			width: 130px;
+			height: 40px;
+			background: #34f315;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: 'Abel', sans-serif;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			position: absolute;
+			right: 0;
+		}
+		.logo{
+			color: #fff;
+			font-family: 'Abel', sans-serif;
+			font-size: 30px;
+			position: absolute;
+			padding: 20px;
+		}
+		.brand-quote{
+			color: #fff;
+			font-family: 'Patua One', cursive;
+			font-size: 50px;
+			padding-left: 20px;
+			position: relative;
+			top: 100px;
+		}
+		.para{
+			width: 500px;
+			font-family: 'Montserrat', sans-serif;
+			color: #fff;
+			position: relative;
+			top: 100px;
+			padding-left: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="bg-image">
+		<div class="bw-gradient"></div>
+		<div class="conatiner">
+			<div class="logo">Baadshah Bawal</div>
+			<div class="header">
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Jobs</a></li>
+					</ul>
+				</nav>
+				<button>Contacts</button>
+			</div>
+			<h1 class="brand-quote">Abhi Thode der pehle banaya hai.</h1>
+			<h2 class="brand-quote" style="color:#34f315;">Creativity</h2>
+			<p class="para"> MIRZAPUR:- "OOoo Bhosriwale Chacha, Jyada bakaiti mat chodo Chup Chap Puncture banaaao... Jyada Gand phulaaoge to ma ch** denge tumahra" bhag bhag dk bose, sab betichod, aankh dikhata hai madarjaat. OOoo Bhosriwale Chacha,bhag bhag dk bose, sab betichod, aankh dikhata hai madarjaat. OOoo Bhosriwale Chacha,bhag bhag dk bose, sab betichod, aankh dikhata hai madarjaat.</p>
+		</div>
+	</div>
+</body>
+</html>
