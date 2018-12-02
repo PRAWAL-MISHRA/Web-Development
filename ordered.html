@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Lists in html</title>
+<link rel = "stylesheet" href = "HTMLSpecialCharacterCSS.css">
+<link href = "https://fonts.googleapis.com/css?family=Monoton" rel = "stylesheet">
+</head>
+<body id = "body" bgcolor="#E9C92D">
+	<div id = "head_wrapper">
+	<div id = "header">
+		<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<a href="formattingtags.html">FORMATTING TAGS</a>
+    <a href="IMAGE.html">IMAGES</a>
+    <a href="Intro.html">TABLES and LISTS</a>
+    <a href="links.html">LINKS</a>
+    <a href="frame.html">FRAMES</a>
+    <a href="Background.html">BACKGROUND</a>
+    <a href="Fonts.html">FONTS</a>
+    <a href="FORMASSIGNMENT.html">FORMS</a>
+    <a href="webpage.html">MARQUEE</a>
+    <a href="MULTI.html">MULTIMEDIA</a>
+    <a href="HTMLTagReference.html">TAG REFERENCE</a>
+    <a href="HTMLSpecialCharacter.html">SPECIAL CHARACTERS</a>
+    <a href="Pg1.html">HEADER</a>
+    <a href="Pg8.html">FOOTER</a>
+    <a href="Pg9.html">STYLE-SHEETS</a>
+	</div>
+				<img src = "HTML_Logo_50x50.png"/>
+				<a href = "Homepage.html" style = "text-decoration : none; color : #00d6d6;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+        <a href = "Aboutus.html"> <button class = "btn2" onclick = "Aboutus.html" ><font face = "Segoe UI"><img src = "d1.png" class = "img" /> &nbsp;ABOUT </font></button></a>
+			</div>
+		</div>
+<caption><h1 align="center"><mark><font face="forte">ORDERED LISTS</font></mark></h1></caption>
+<br>
+Ordered lists-<br>
+<h4>Ordered (numbered) lists are used to display a list of items that should be in a specific order. An example would be cooking instructions-</h4>
+
+1)Gather ingredients<br>
+2)Mix ingredients together<br>
+3)Place ingredients in a baking dish<br>
+4)Bake in oven for an hour<br>
+5)Remove from oven<br>
+6)Allow to stand for ten minutes<br>
+7)Serve<br><br>
+
+If the list items were moved around into a different order, the information would no longer make sense:<br>
+<b><h3>
+Gather ingredients<br>
+Bake in oven for an hour<br>
+Serve<br>
+Remove from oven<br>
+Place ingredients in a baking dish<br>
+Allow to stand for ten minutes<br>
+Mix ingredients together<br>
+Ordered lists can be displayed with several sequencing options. <br>The default in most browsers is decimal numbers, but there are others available-<br>
+<br>
+Letters<br>
+Lowercase ascii letters (a, b, c…)<br>
+Uppercase ascii letters (A, B, C…).<br>
+Lowercase classical Greek: (έ, ή, ί…)<br>
+<br>
+Numbers<br>
+Decimal numbers (1, 2, 3…)<br>
+Decimal numbers with leading zeros (01, 02, 03…)<br>
+Lowercase Roman numerals (i, ii, iii…)<br>
+Uppercase Roman numerals (I, II, III…)<br>
+Traditional Georgian numbering (an, ban, gan…)<br>
+Traditional Armenian numbering (mek, yerku, yerek…)<br>
+</b></h3>
+
+
+<!-- Acknowledgement-->
+		<div id = "ack" style = "opacity : 1;">
+			<div style = "font-size : 44">
+			<a href = "Homepage.html"><img src = "HTML_Logo_50x50.png"/></a>
+			<a href = "Homepage.html" style = " color : #00d6d6; font-family : 'Monoton', cursive; size : 30; text-decoration: none;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+			</div>
+			<center>
+			<font face = "Segoe UI">Our Other Channels</font>
+			</center>
+			<br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> PRIVACY&emsp; . &emsp; TERMS</font>
+			<img src = "Facebook_50px.png" height = "24px" widhth = "24px" style = "margin-left : 440px;">
+			<img src = "Twitter_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Instagram_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Play Button_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px; margin-right : 430px;">
+			
+			<img src = "Geography_50px.png" height = "24px" widhth = "24px" >
+			<font face = "Segoe UI" = "#00d6d6" style = "margin-left :10px;"> English<font>
+			<br><br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> CONTACT</font>
+			<br>
+			<center>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> &copy;2018 Pallav Jalan. IT - 2 (3rd Semester) Roll No. : 1706140 and the HTMLWiki</font>
+				<br>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> are trademarks of Pallav Jalan (IT - 2) in KIIT UNIVERSITY. All Rights Reserved</font>
+			</center>
+		</div>
+			<script>
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width= '0';
+			document.getElementById('main').style.marginLeft= '0';
+		}
+		function openSlideMenu(){
+			document.getElementById('side-menu').style.width= '250px';
+			document.getElementById('main').style.marginLeft= '250px';
+		}
+	</script>
+</body>
+</html>

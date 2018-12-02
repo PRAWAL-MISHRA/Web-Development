@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<link rel = "stylesheet" href = "HTMLSpecialCharacterCSS.css">
+	<link href = "https://fonts.googleapis.com/css?family=Monoton" rel = "stylesheet">
+    <meta charset="utf-8" />
+    <title>HTML Fonts</title>
+    <style>
+	#body{
+                      margin-top: 0px;
+                      margin-right: 0px;
+                      margin-left: 0px;
+                      margin-bottom: 0px;
+                     }
+		.side-nav{
+			font-family: Segoe UI;
+			height: 100%
+			width:0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			opacity: 0.9;
+			overflow-x: hidden;
+			padding-top: 60px;
+			transition: 0.5s;
+		}
+		.side-nav a{
+			padding: 10px 10px 10px 30px;
+			text-decoration: none;
+			font-size: 22px;
+			color: #ccc;
+			display: block;
+			transition: 0.3s;
+		}
+		.side-nav a:hover{
+			color: #fff;
+		}
+		.side-nav .btn-close{
+			position: absolute;
+			top: 0;
+			right: 22px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+		#head_wrapper	{
+			max-width : 100%;
+			opacity : 1;
+		}
+
+		#header	{
+			z-index: 1; 
+			width: 100%;
+			height: auto;
+			padding: 0px 0px;
+			position: relative;
+			margin: 0 auto;
+			background-color: #002a32;
+			color: #00d6d6;
+			font-size : 40px;
+			font-family: 'Monoton', cursive;
+			opacity : 1;
+			padding-bottom : 10px;
+			padding-top : 10px;
+		}
+		.btn2	{
+			position : relative;
+			border : none;
+			height : 66px;
+			outline : 0;
+			display : inline-block;
+			margin: 0 auto;
+			background-color : #002a32;
+			color : #00d6d6;
+			padding-top : 20px;
+			padding-bottom : 10px;
+			padding-right : 60px;
+			text-align : center;
+			cursor : pointer;
+			font-size: 16px;
+			float : right;
+		}
+		.btn2:hover	{
+			background-color : #002a32;
+			color:#ffffff;
+		}
+		#ack {	margin-top : 60px;
+		padding-left : 20px;
+		background-color : #002a32;
+		opacity : 1;
+		padding-top : 40px;
+		padding-bottom : 40px;
+		color : #00d6d6;
+		}
+        .html-code {
+            border: solid;
+            border-width: thin;
+            border-color: black;
+            width: 50%;
+            background-color:lightblue;
+            font-weight:500;
+        }
+
+        p {
+            font-size: inherit;
+            font-family: Verdana,sans-serif;
+        }
+
+        table.html-table-all {
+            margin: 20px 0;
+        }
+
+        .html-table-all {
+            border: 1px solid #ccc;
+        }
+
+        .html-table, .html-table-all {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            display: table;
+        }
+
+        td, th {
+            display: table-cell;
+            vertical-align: inherit;
+        }
+
+        table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+        pre.prettyprint {
+            border: 1px solid #d6d6d6;
+            background-color: #eee; 
+            border-radius: 0;
+            padding: 5px;
+            margin: 0;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            font-size: 13px;
+            overflow: auto;
+        }
+
+        pre.prettyprint {
+            line-height: 16px;
+        }
+
+        pre.result, pre.prettyprint {
+            width: 100% !important;
+            border-radius: 0;
+        }
+
+        pre {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+        }
+        .tag {
+            color: #008;
+        }
+        .atv {
+            color: #080;
+        }
+        .atn {
+            color: #7f0055;
+        }
+        a.refereceLinks{
+            text-decoration:none;
+            color:forestgreen;
+        }
+        a.refereceLinks a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body id = "body" style = "background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 100, 0.5)), url(); background-size : auto; background-repeat : none; background-position : center; background-attachment : fixed;">
+		<div id = "header_wrapper">
+			<div id = "header">
+				<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+	  <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="formattingtags.html">FORMATTING TAGS</a>
+    <a href="IMAGE.html">IMAGES</a>
+    <a href="Intro.html">TABLES and LISTS</a>
+    <a href="links.html">LINKS</a>
+    <a href="frame.html">FRAMES</a>
+    <a href="Background.html">BACKGROUND</a>
+    <a href="Fonts.html">FONTS</a>
+    <a href="FORMASSIGNMENT.html">FORMS</a>
+    <a href="webpage.html">MARQUEE</a>
+    <a href="MULTI.html">MULTIMEDIA</a>
+    <a href="HTMLTagReference.html">TAG REFERENCE</a>
+    <a href="HTMLSpecialCharacter.html">SPECIAL CHARACTERS</a>
+    <a href="Pg1.html">HEADER</a>
+    <a href="Pg8.html">FOOTER</a>
+    <a href="Pg9.html">STYLE-SHEETS</a>
+    </div>
+				<img src = "HTML_Logo_50x50.png"/>
+				<a href = "Homepage.html" style = "text-decoration : none; color : #00d6d6;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+        <a href = "Aboutus.html"> <button class = "btn2" onclick = "Aboutus.html" ><font face = "Segoe UI"><img src = "d1.png" class = "img" /> &nbsp;ABOUT </font></button></a>
+			</div>
+		</div>
+<h1>HTML - Fonts</h1>
+<p><bgcolor="#faebd7">Fonts play a very important role in making a website more user friendly and increasing content readability. 
+Font face and color depends entirely on the computer and browser that is being used to view your page but you can use HTML <b>&lt;font&gt;</b> tag to add style, size, and color to the text on your website.
+ You can use a <b>&lt;basefont&gt;</b> tag to set all of your text to the same size, face, and color.</p>
+ <p>The font tag is having three attributes called <b>size, color</b>, and <b>face</b> to customize your fonts.
+ To change any of the font attributes at any time within your webpage, simply use the &lt;font&gt; tag. 
+ The text that follows will remain changed until you close with the &lt;/font&gt; tag.
+ You can change one or all of the font attributes within one &lt;font&gt; tag.</p>
+ <blockquote><p><b>Note</b> −The <i>font</i> and <i>basefont</i> tags are deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use CSS styles to manipulate your fonts. 
+ But still for learning purpose, this chapter will explain font and basefont tags in detail.</p></blockquote>
+ <h2>Set Font Size</h2>
+ <p>You can set content font size using <b>size</b> attribute. The range of accepted values is from 1(smallest) to 7(largest). 
+ The default size of a font is 3.</p>
+ <h3>Example</h3>
+ <pre class="prettyprint notranslate prettyprinted" style=""><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">Setting Font Size</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;font</span><span class="pln"> </span><span class="atn">size</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"1"</span><span class="tag">&gt;</span><span class="pln">Font size = "1"</span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+      </span><span class="tag">&lt;font</span><span class="pln"> </span><span class="atn">size</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"2"</span><span class="tag">&gt;</span><span class="pln">Font size = "2"</span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+      </span><span class="tag">&lt;font</span><span class="pln"> </span><span class="atn">size</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"3"</span><span class="tag">&gt;</span><span class="pln">Font size = "3"</span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+      </span><span class="tag">&lt;font</span><span class="pln"> </span><span class="atn">size</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"4"</span><span class="tag">&gt;</span><span class="pln">Font size = "4"</span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+      </span><span class="tag">&lt;font</span><span class="pln"> </span><span class="atn">size</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"5"</span><span class="tag">&gt;</span><span class="pln">Font size = "5"</span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+      </span><span class="tag">&lt;font</span><span class="pln"> </span><span class="atn">size</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"6"</span><span class="tag">&gt;</span><span class="pln">Font size = "6"</span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+      </span><span class="tag">&lt;font</span><span class="pln"> </span><span class="atn">size</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"7"</span><span class="tag">&gt;</span><span class="pln">Font size = "7"</span><span class="tag">&lt;/font&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>This will produce the following result −</p>
+<html><head>
+      <title>Setting Font Size</title>
+   </head>
+
+   <body>
+      <font size="1">Font size = "1"</font><br>
+      <font size="2">Font size = "2"</font><br>
+      <font size="3">Font size = "3"</font><br>
+      <font size="4">Font size = "4"</font><br>
+      <font size="5">Font size = "5"</font><br>
+      <font size="6">Font size = "6"</font><br>
+      <font size="7">Font size = "7"</font>
+   
+
+</body></html>
+<html><head>
+      <title>Relative Font Size</title>
+   </head>
+   <body>
+      <font size="-1">Font size = "-1"</font><br>
+      <font size="+1">Font size = "+1"</font><br>
+      <font size="+2">Font size = "+2"</font><br>
+      <font size="+3">Font size = "+3"</font><br>
+      <font size="+4">Font size = "+4"</font>
+</body></html>
+ <p><a href="Rel.html"><b>Click Here To Know More..</b></a>.</p>
+                                <br />
+                               <hr />
+                               <br />
+                      </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+      </section>
+	  <div id = "ack" style = "opacity : 1;">
+			<div style = "font-size : 44">
+			<a href = "Homepage.html"><img src = "HTML_Logo_50x50.png"/></a>
+			<a href = "Homepage.html" style = " color : #00d6d6; font-family : 'Monoton', cursive; size : 30; text-decoration: none;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+			</div>
+			<center>
+			<font face = "Segoe UI">Our Other Channels</font>
+			</center>
+			<br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> PRIVACY&emsp; . &emsp; TERMS</font>
+			<img src = "Facebook_50px.png" height = "24px" widhth = "24px" style = "margin-left : 440px;">
+			<img src = "Twitter_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Instagram_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Play Button_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px; margin-right : 430px;">
+			
+			<img src = "Geography_50px.png" height = "24px" widhth = "24px" >
+			<font face = "Segoe UI" = "#00d6d6" style = "margin-left :10px;"> English<font>
+			<br><br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> CONTACT</font>
+			<br>
+			<center>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> &copy;2018  Meghna Singh. IT - 2 (3rd Semester) Roll No. : 1706138 and the HTMLWiki</font>
+				<br>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> are trademarks of Meghna Singh (IT - 2) in KIIT UNIVERSITY. All Rights Reserved</font>
+			</center>
+		</div>
+		<script>
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width= '0';
+			document.getElementById('main').style.marginLeft= '0';
+		}
+		function openSlideMenu(){
+			document.getElementById('side-menu').style.width= '250px';
+			document.getElementById('main').style.marginLeft= '250px';
+		}
+		</script>
+</body>
+</html>

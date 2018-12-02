@@ -1,0 +1,121 @@
+<html>
+<head>
+  
+  <link rel = "stylesheet" href = "HTMLSpecialCharacterCSS.css">
+  <link href = "https://fonts.googleapis.com/css?family=Monoton" rel = "stylesheet">
+</head>
+<body id = "body">
+
+<div id = "head_wrapper">
+  <div id = "header">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="formattingtags.html">FORMATTING TAGS</a>
+    <a href="IMAGE.html">IMAGES</a>
+    <a href="Intro.html">TABLES and LISTS</a>
+    <a href="links.html">LINKS</a>
+    <a href="frame.html">FRAMES</a>
+    <a href="Background.html">BACKGROUND</a>
+    <a href="Fonts.html">FONTS</a>
+    <a href="FORMASSIGNMENT.html">FORMS</a>
+    <a href="webpage.html">MARQUEE</a>
+    <a href="MULTI.html">MULTIMEDIA</a>
+    <a href="HTMLTagReference.html">TAG REFERENCE</a>
+    <a href="HTMLSpecialCharacter.html">SPECIAL CHARACTERS</a>
+    <a href="Pg1.html">HEADER</a>
+    <a href="Pg8.html">FOOTER</a>
+    <a href="Pg9.html">STYLE-SHEETS</a>
+  </div>
+        <img src = "HTML_Logo_50x50.png"/>
+        <a href = "Homepage.html" style = "text-decoration : none; color : #00d6d6;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+        <a href = "Aboutus.html"> <button class = "btn2" onclick = "Aboutus.html" ><font face = "Segoe UI"><img src = "d1.png" class = "img" /> &nbsp;ABOUT </font></button></a>
+      </div>
+    </div>
+
+<u><h1>VIDEO AND ITS ATTRIBUTES</u></h1>
+<h2>ATTRIBUTES</H2>
+<P>The controls attribute adds video controls, like play, pause, and volume.
+It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+The "source" element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+The text between the "video" and "/video" tags will only be displayed in browsers that do not support the "video" element.
+</P>
+<h3><U>VIDEO FORMAT</H3></U>
+<p>Multimedia elements (like audio or video) are stored in media files.
+
+The most common way to discover the type of a file, is to look at the file extension.
+
+Multimedia files have formats and different extensions like: .swf, .wav, .mp3, .mp4, .mpg, .wmv, and .avi.<br>
+For more details about the types of video format <a href="format.html">CLICK HERE</a></p>
+<p>
+<H2><U>TAGS</H2></U>
+<table style="width:50%" border=1>
+  <tr>
+    <th>TAG</th>
+    <th>DESCRIPTION</th>
+  </tr>
+  <tr>
+    <td>"VIDEO"</td>
+    <td>Defines a video or movie</td>
+
+  </tr>
+  <tr>
+    <td>"SOURCE"</td>
+    <td>Defines multiple media resources for media elements, such as "video" and "audio"</td>
+</tr>
+  <tr>
+      <td>"TRACK"</td>
+      <td>Defines text tracks in media players</td>
+
+    </tr>
+    </TABLE>
+    <h4><u>Use of video tags and attributes <a href="VIDEO.html">EXAMPLE</a></h4><BR>
+    <a href="plugin.html"><button>NEXT</button></a>
+
+  <!-- Acknowledgement-->
+    <div id = "ack" style = "opacity : 1;">
+      <div style = "font-size : 44">
+      <a href = "Homepage.html" style = "text-decoration : none;"><img src = "HTML_Logo_50x50.png"/></a>
+      <a href = "Homepage.html" style = " color : #00d6d6; font-family : 'Monoton', cursive; size : 30; text-decoration: none;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+      </div>
+      <center>
+      <font face = "Segoe UI">Our Other Channels</font>
+      </center>
+      <br>
+      <font face = "Segoe UI" color = "#00d6d6" size = "2"> PRIVACY&emsp; . &emsp; TERMS</font>
+      <img src = "Facebook_50px.png" height = "24px" widhth = "24px" style = "margin-left : 440px;">
+      <img src = "Twitter_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+      <img src = "Instagram_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+      <img src = "Play Button_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px; margin-right : 430px;">
+      
+      <img src = "Geography_50px.png" height = "24px" widhth = "24px" >
+      <font face = "Segoe UI" = "#00d6d6" style = "margin-left :10px;"> English<font>
+      <br><br>
+      <font face = "Segoe UI" color = "#00d6d6" size = "2"> CONTACT</font>
+      <br>
+      <center>
+        <font face = "Century Gothic" color = "#00d6d6" size = "1"> &copy;2018 Pallav Jalan. IT - 2 (3rd Semester) Roll No. : 1706140 and the HTMLWiki</font>
+        <br>
+        <font face = "Century Gothic" color = "#00d6d6" size = "1"> are trademarks of Pallav Jalan (IT - 2) in KIIT UNIVERSITY. All Rights Reserved</font>
+      </center>
+    </div>
+    </body>
+    <script>
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width= '0';
+      document.getElementById('main').style.marginLeft= '0';
+    }
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width= '250px';
+      document.getElementById('main').style.marginLeft= '250px';
+    }
+  </script>
+</HTML>

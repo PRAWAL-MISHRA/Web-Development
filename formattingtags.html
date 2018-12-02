@@ -1,0 +1,275 @@
+<html>
+<head>
+  <link rel = "stylesheet" href = "HTMLSpecialCharacterCSS.css">
+  <link href = "https://fonts.googleapis.com/css?family=Monoton" rel = "stylesheet"><style>
+    .side-nav{
+      font-family: Segoe UI;
+      height: 100%
+      width:0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      opacity: 0.9;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+    .side-nav a{
+      padding: 10px 10px 10px 30px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #ccc;
+      display: block;
+      transition: 0.3s;
+    }
+    .side-nav a:hover{
+      color: #fff;
+    }
+    .side-nav .btn-close{
+      position: absolute;
+      top: 0;
+      right: 22px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    #head_wrapper {
+      max-width : 100%;
+      opacity : 1;
+    }
+
+    #header {
+      z-index: 1; 
+      width: 100%;
+      height: auto;
+      padding: 0px 0px;
+      position: relative;
+      margin: 0 auto;
+      background-color: #002a32;
+      color: #00d6d6;
+      font-size : 40px;
+      font-family: 'Monoton', cursive;
+      opacity : 1;
+      padding-bottom : 10px;
+      padding-top : 10px;
+    }
+    .btn2 {
+      position : relative;
+      border : none;
+      height : 66px;
+      outline : 0;
+      display : inline-block;
+      margin: 0 auto;
+      background-color : #002a32;
+      color : #00d6d6;
+      padding-top : 20px;
+      padding-bottom : 10px;
+      padding-right : 60px;
+      text-align : center;
+      cursor : pointer;
+      font-size: 16px;
+      float : right;
+    }
+    .btn2:hover {
+      background-color : #002a32;
+      color:#ffffff;
+    }
+    #ack {  margin-top : 60px;
+    padding-left : 20px;
+    background-color : #002a32;
+    opacity : 1;
+    padding-top : 40px;
+    padding-bottom : 40px;
+    color : #00d6d6;
+    }
+
+  a {
+    background-color: #ff5050;
+    padding-left:25;
+    padding-right:29;
+    }
+    div {
+
+	    background: linear-gradient(to bottom right, #ffff99 0%, #66ccff 100%)
+}
+ legend{
+    text-align:center;
+    font-size:300%;
+    }
+  </style>
+  </head>
+  <body id = "body" style = "background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 100, 0.5)), url(wap8.jpg); background-size : auto; background-repeat : none; background-position : center; background-attachment : fixed;">
+    <div id = "header_wrapper">
+      <div id = "header">
+        <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="formattingtags.html">FORMATTING TAGS</a>
+    <a href="IMAGE.html">IMAGES</a>
+    <a href="Intro.html">TABLES and LISTS</a>
+    <a href="links.html">LINKS</a>
+    <a href="frame.html">FRAMES</a>
+    <a href="Background.html">BACKGROUND</a>
+    <a href="Fonts.html">FONTS</a>
+    <a href="FORMASSIGNMENT.html">FORMS</a>
+    <a href="webpage.html">MARQUEE</a>
+    <a href="MULTI.html">MULTIMEDIA</a>
+    <a href="HTMLTagReference.html">TAG REFERENCE</a>
+    <a href="HTMLSpecialCharacter.html">SPECIAL CHARACTERS</a>
+    <a href="Pg1.html">HEADER</a>
+    <a href="Pg8.html">FOOTER</a>
+    <a href="Pg9.html">STYLE-SHEETS</a>
+    </div>
+        <img src = "HTML_Logo_50x50.png"/>
+        <a href = "" style = "text-decoration : none; color : #00d6d6;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+        
+        <button class = "btn2" onclick = "" ><font face = "Segoe UI"><img src = "d1.png" class = "img" /> &nbsp;ABOUT </font></button>
+      </div>
+    </div>
+  <div>
+ <fieldset><legend>BASIC TAGS</legend>
+ <h1 align="left"><font color="#ff0066"><strong><u>HTML Formatting Tags</u></strong></font></h1>
+  <h3> <font color="tomato"><u><h4>Definition</h4></u></font></h3>
+
+   <ul type=square>
+
+
+    <li>HTML formatting tags use for formatting a text style. It will become necessary to make minor changes to the formatting of those elements.</li>
+
+
+
+   </ul>
+
+<br><br>
+HTML <<font color="white">b</font>> tag used for fomatting output <b>BOLD</b> text. Following are few common formatting tags:<br><br>
+
+
+
+  <table align="center">
+   <tr bgcolor="#99ffcc">
+    <th style="width: 20%;">Tag</th>
+    <th style="width: 30%;">Example</th>
+    <th style="width: 70%;">Results</th>
+   </tr>
+   <tr>
+    <td><<font color="white">b</font>></td>
+	<td><<font color="white">b</font>>BOLD<<font color="white">/b</font>></td>
+    <td><b>BOLD</b> TEXT</td>
+   </tr>
+  <tr>
+      <td><<font color="white">big</font>></td>
+  	<td><<font color="white">big</font>>BIG TEXT<<font color="white">/big</font>></td>
+      <td><big>BIG </big> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">center</font>></td>
+   	<td><<font color="white">center</font>>CENTER<<font color="white">/center</font>></td>
+       <td><center>CENTER </center>TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">em</font>></td>
+   	<td><<font color="white">em</font>>EMPHASIZED<<font color="white">/em</font>></td>
+       <td><em>EMPHASIZED </em> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">i</font>></td>
+   	<td><<font color="white">i</font>>ITALIC<<font color="white">/i</font>></td>
+       <td><i>ITALIC</i> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">small</font>></td>
+   	<td><<font color="white">small</font>>SMALL<<font color="white">/small</font>></td>
+       <td><small>SMALL</small> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">strong</font>></td>
+   	<td><<font color="white">strong</font>>STRONG<<font color="white">/strong</font>></td>
+       <td><strong>STRONG</strong> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">sub</font>></td>
+   	<td><<font color="white">sub</font>>SUBSCRIPT<<font color="white">/sub</font>></td>
+       <td><sub>SUBSCRIPT</sub> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">sup</font>></td>
+   	<td><<font color="white">sup</font>>SUPERSCRIPT<<font color="white">/sup</font>></td>
+       <td><sup>SUPERSCRIPT</sup> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">del</font>></td>
+   	<td><<font color="white">del</font>>DELETE<<font color="white">/del</font>></td>
+       <td><del>DELETE</del> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">s</font>></td>
+   	<td><<font color="white">s</font>>STRIKE<<font color="white">/strike</font>></td>
+       <td><s>STRIKE</s> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">u</font>></td>
+   	<td><<font color="white">u</font>>UNDERLINE<<font color="white">/u</font>></td>
+       <td><u>UNDERLINE</u> TEXT</td>
+   </tr>
+   <tr>
+       <td><<font color="white">tt</font>></td>
+   	<td><<font color="white">tt</font>>TELETYPE<<font color="white">tt</font>></td>
+       <td><tt>TELETYPE</tt> TEXT</td>
+   </tr>
+   <tr>
+          <td><<font color="white">blockquote</font>></td>
+      	<td><<font color="white">blockquote</font>>QUOTATION<<font color="white">/blockquote</font>></td>
+          <td><q>QUOTE</q> TEXT</td>
+   </tr>
+ </table>
+ <br>
+<br>
+  <br>
+  <br>
+  <br>
+ </fieldset></div>
+ <div id = "ack" style = "opacity : 1;">
+      <img src = "HTML_Logo_50x50.png"  height = "50px"/>
+      <center>
+      <font>Our Other Channels</font>
+      </center>
+      <br>
+      <font face = "Segoe UI" color = "#00d6d6" size = "2"> PRIVACY&emsp; . &emsp; TERMS</font>
+      <img src = "Facebook_50px.png" height = "24px" widhth = "24px" style = "padding-left : 400px;">
+      <img src = "Twitter_50px.png" height = "24px" widhth = "24px" style = "padding-left : 30px;">
+      <img src = "Instagram_50px.png" height = "24px" widhth = "24px" style = "padding-left : 30px;">
+      <img src = "Play Button_50px.png" height = "24px" widhth = "24px" style = "padding-left : 30px; padding-right : 300px;">
+      
+      <img src = "Geography_50px.png" height = "24px" widhth = "24px" >
+      <font color = "grey" style = "padding-left :10px;"> English<font>
+      <br><br>
+      <font face = "Segoe UI" color = "#00d6d6" size = "2"> CONTACT</font>
+      <br>
+      <center>
+        <font face = "Century Gothic" color = "#00d6d6" size = "1"> &copy;2018 Eren Kaushik. IT - 2 (3rd Semester) Roll No. : 1706134 and the HTML Wiki logo</font>
+        <br>
+        <font face = "Century Gothic" color = "#00d6d6" size = "1"> are trademarks of Eren Kaushik (IT - 2) in KIIT UNIVERSITY. All Rights Reserved</font>
+      </center>
+      
+    </div>
+  <script>
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width= '0';
+      document.getElementById('main').style.marginLeft= '0';
+    }
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width= '250px';
+      document.getElementById('main').style.marginLeft= '250px';
+    }
+  </script>
+</body>
+</html>

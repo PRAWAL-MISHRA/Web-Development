@@ -1,0 +1,282 @@
+<html>
+<head>
+	<link href = "https://fonts.googleapis.com/css?family=Monoton" rel = "stylesheet">
+<link rel = "stylesheet" href = "HTMLSpecialCharacterCSS.css">
+<style>
+body {
+     margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.side-nav{
+			font-family: Segoe UI;
+			height: 100%
+			width:0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			opacity: 0.9;
+			overflow-x: hidden;
+			padding-top: 60px;
+			transition: 0.5s;
+		}
+		.side-nav a{
+			padding: 10px 10px 10px 30px;
+			text-decoration: none;
+			font-size: 22px;
+			color: #ccc;
+			display: block;
+			transition: 0.3s;
+		}
+		.side-nav a:hover{
+			color: #fff;
+		}
+		.side-nav .btn-close{
+			position: absolute;
+			top: 0;
+			right: 22px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+		#head_wrapper	{
+			max-width : 100%;
+			opacity : 1;
+		}
+
+		#header	{
+			z-index: 1; 
+			width: 100%;
+			height: auto;
+			padding: 0px 0px;
+			position: relative;
+			margin: 0 auto;
+			background-color: #002a32;
+			color: #00d6d6;
+			font-size : 40px;
+			font-family: 'Monoton', cursive;
+			opacity : 1;
+			padding-bottom : 10px;
+			padding-top : 10px;
+		}
+		.btn2	{
+			position : relative;
+			border : none;
+			height : 66px;
+			outline : 0;
+			display : inline-block;
+			margin: 0 auto;
+			background-color : #002a32;
+			color : #00d6d6;
+			padding-top : 20px;
+			padding-bottom : 10px;
+			padding-right : 60px;
+			text-align : center;
+			cursor : pointer;
+			font-size: 16px;
+			float : right;
+		}
+		.btn2:hover	{
+			background-color : #002a32;
+			color:#ffffff;
+		}
+		#ack {	margin-top : 60px;
+		padding-left : 20px;
+		background-color : #002a32;
+		opacity : 1;
+		padding-top : 40px;
+		padding-bottom : 40px;
+		color : #00d6d6;
+		}
+
+</style>
+</head>
+<body  style="background:url(u2.jpg); background-size:100%100%;" border="5">
+	<div id = "header_wrapper">
+			<div id = "header">
+				<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<a href="formattingtags.html">FORMATTING TAGS</a>
+    <a href="IMAGE.html">IMAGES</a>
+    <a href="Intro.html">TABLES and LISTS</a>
+    <a href="links.html">LINKS</a>
+    <a href="frame.html">FRAMES</a>
+    <a href="Background.html">BACKGROUND</a>
+    <a href="Fonts.html">FONTS</a>
+    <a href="FORMASSIGNMENT.html">FORMS</a>
+    <a href="webpage.html">MARQUEE</a>
+    <a href="MULTI.html">MULTIMEDIA</a>
+    <a href="HTMLTagReference.html">TAG REFERENCE</a>
+    <a href="HTMLSpecialCharacter.html">SPECIAL CHARACTERS</a>
+    <a href="Pg1.html">HEADER</a>
+    <a href="Pg8.html">FOOTER</a>
+    <a href="Pg9.html">STYLE-SHEETS
+	</div>
+				<img src = "HTML_Logo_50x50.png"/>
+				<a href = "Homepage.html" style = "text-decoration : none; color : #00d6d6;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+				<a href = "Aboutus.html"> <button class = "btn2" onclick = "Aboutus.html" ><font face = "Segoe UI"><img src = "d1.png" class = "img" /> &nbsp;ABOUT </font></button></a>
+			</div>
+		</div>
+
+  <marquee><h1><font color="red"> STUDENT REGISTRATION FORM</font></h1></marquee>
+<form action="submit.html"  name="StudentRegistration" >
+
+<table bgcolor="lightgrey"cellpadding="2" width="50%",height="50" border="10" align="center"cellspacing="2">
+
+<tr>
+<td colspan=2>
+<center><font size=6><b>Personal Information</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td><input type=text name=textnames id="textname" size="30"></td>
+</tr>
+
+<tr>
+<td>Father Name</td>
+<td><input type="text" name="fathername" id="fathername"
+size="30"></td>
+</tr>
+<tr>
+<td>Postal Address</td>
+<td><input type="text" name="paddress" id="paddress" size="30"></td>
+</tr>
+
+<tr>
+<td>Personal Address</td>
+<td><input type="text" name="personaladdress"
+id="personaladdress" size="30"></td>
+</tr>
+
+<tr>
+<td>Sex</td>
+<td><input type="radio" name="sex" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</td>
+</tr>
+
+<tr>
+<td>City</td>
+<td><select name="City">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Patna">PATNA</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="B.Tech">B.TECH</option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="BCA">BCA</option>
+</select></td>
+</tr>
+
+<tr>
+<td>District</td>
+<td><select name="District">
+<option value="-1" selected>select..</option>
+<option value="Nalanda">NALANDA</option>
+<option value="UP">UP</option>
+<option value="Goa">GOA</option>
+<option value="Patna">PATNA</option>
+</select></td>
+
+</tr>
+
+<tr>
+<td>State</td>
+<td><select Name="State">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Bihar">BIHAR</option>
+</select></td>
+</tr>
+<tr>
+<td>PinCode</td>
+<td><input type="text" name="pincode" id="pincode" size="30"></td>
+
+</tr>
+<tr>
+<td>EmailId</td>
+<td><input type="text" name="emailid" id="emailid" size="30"></td>
+</tr>
+
+<tr>
+<td>DOB</td>
+<td><input type="text" name="dob" id="dob" size="30"></td>
+</tr>
+
+<tr>
+<td>MobileNo</td>
+<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+</tr>
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="Submit Form" />
+<a href="submit.html"></a></td>
+</tr>
+</table>
+</form><br><br>
+<marquee><h4><font color="red">Note="The last date for submission is 5th august,2018"   Do check the details before submitting</font></h4></marquee>
+</h1>
+<h1><a href=FORMASSIGNMENT.HTML>Back</a></h1><center>
+<img src="kiit3.png" style="width:200;height:20;"></center>
+<!-- Acknowledgement-->
+		<div id = "ack" style = "opacity : 1;">
+			<div style = "font-size : 44">
+			<a href = "Homepage.html"><img src = "HTML_Logo_50x50.png"/></a>
+			<a href = "Homepage.html" style = " color : #00d6d6; font-family : 'Monoton', cursive; size : 30; text-decoration: none;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+			</div>
+			<center>
+			<font face = "Segoe UI">Our Other Channels</font>
+			</center>
+			<br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> PRIVACY&emsp; . &emsp; TERMS</font>
+			<img src = "Facebook_50px.png" height = "24px" widhth = "24px" style = "margin-left : 440px;">
+			<img src = "Twitter_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Instagram_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Play Button_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px; margin-right : 430px;">
+			
+			<img src = "Geography_50px.png" height = "24px" widhth = "24px" >
+			<font face = "Segoe UI" = "#00d6d6" style = "margin-left :10px;"> English<font>
+			<br><br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> CONTACT</font>
+			<br>
+			<center>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> &copy;2018 Piyush Raj. IT - 2 (3rd Semester) Roll No. : 1706142 and the HTMLWiki</font>
+				<br>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> are trademarks of Piyush Raj(IT - 2) in KIIT UNIVERSITY. All Rights Reserved</font>
+			</center>
+		</div>
+		<script>
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width= '0';
+			document.getElementById('main').style.marginLeft= '0';
+		}
+		function openSlideMenu(){
+			document.getElementById('side-menu').style.width= '250px';
+			document.getElementById('main').style.marginLeft= '250px';
+		}
+		</script>
+</body>
+</html>

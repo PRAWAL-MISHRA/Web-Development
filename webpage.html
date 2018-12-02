@@ -1,0 +1,143 @@
+<html>
+<head>
+	
+	<link rel = "stylesheet" href = "HTMLSpecialCharacterCSS.css">
+	<link href = "https://fonts.googleapis.com/css?family=Monoton" rel = "stylesheet">
+</head>
+<body id = "body" bgcolor="lightgrey">
+
+<div id = "head_wrapper">
+	<div id = "header">
+		<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<a href="formattingtags.html">FORMATTING TAGS</a>
+    <a href="IMAGE.html">IMAGES</a>
+    <a href="Intro.html">TABLES and LISTS</a>
+    <a href="links.html">LINKS</a>
+    <a href="frame.html">FRAMES</a>
+    <a href="Background.html">BACKGROUND</a>
+    <a href="Fonts.html">FONTS</a>
+    <a href="FORMASSIGNMENT.html">FORMS</a>
+    <a href="webpage.html">MARQUEE</a>
+    <a href="MULTI.html">MULTIMEDIA</a>
+    <a href="HTMLTagReference.html">TAG REFERENCE</a>
+    <a href="HTMLSpecialCharacter.html">SPECIAL CHARACTERS</a>
+    <a href="Pg1.html">HEADER</a>
+    <a href="Pg8.html">FOOTER</a>
+    <a href="Pg9.html">STYLE-SHEETS</a>
+	</div>
+				<img src = "HTML_Logo_50x50.png"/>
+				<a href = "Homepage.html" style = "text-decoration : none; color : #00d6d6;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+				<a href = "Aboutus.html"> <button class = "btn2" onclick = "Aboutus.html" ><font face = "Segoe UI"><img src = "d1.png" class = "img" /> &nbsp;ABOUT </font></button></a>
+			</div>
+		</div>
+<marquee><h1>MARQUEE</h1></marquee>
+<h5>
+The marquee tag is a non-standard HTML element which causes text to scroll up, down, left or right automatically.
+The tag was first introduced in early versions of Microsoft's Internet Explorer, and was compared to Netscape's blink element,
+as a proprietary non-standard extension to the HTML standard with usability problems.
+The W3C advises against its use in HTML documents.
+The marquee element was first invented for Microsoft's Internet Explorer and is still supported by it.
+Firefox, Opera, Chrome and Safari web browsers support it for compatibility with legacy pages.
+The element is non-compliant HTML. CSS properties are used to achieve the same effect as specified in the Marquee Module Level 3, which as of 2008 is in the call for implementations stage.Similar effects can also be achieved through the use of JavaScript, or CSS3 animations.
+</h5>
+<h2><u>ATTRIBUTES</u></H2>
+<p>
+<h3><u>Behavior</h3></u>
+Allows the user to set the behavior of the marquee to one of three different types:
+<ol>
+<li>Scroll (default) – Scrolls the text from right-to-left, and restarts at the right side of the marquee when it has reached the left side. Text disappears when looping finishes.</li>
+<li>Slide – When used with the 'Behavior' attribute, contents to be scrolled will slide the entire length of marquee but stops the moment it hits the end, so that the contents will be displayed. But if it is used without the attribute 'Behavior' then the attribute 'Slide' will be ignored.</li>
+<li>Alternate- Scrolls the text from right-to-left & goes back left-to-right.</li></ol>
+For Example-<a href="behaviour.html">CLICK HERE</a><br>
+<h6>Note:- Loops are counted by each time it reaches each end of the marquee; a loop of 1 is different from 'Slide' attribute. when item is being scrolled with 'Slide' attribute, item will stop permanently at the end of length of the marquee, displaying the entire item. However, when an item is being scrolled without a 'Loop' attribute, the number of scrolls will be repeated according to what number 'Loop' is equal to. If 'Loop=1' then item will scroll only once and will exit the length of marquee completely, while the item being scrolled will stop would be the same as 'Slide'. By default, 'Loop=infinite' so it is not needed to code the attribute 'Loop' if you want a non-stop scroll. Note: 'Loop' will be ignored if attribute 'Behavior' is coded. Also, if 'Behavior=Alternate' and 'Loop=2' then item will go from beginning of the Marquee to the end and back to the beginning, counting a round trip as 2 loops.</h6>
+<h3><u>Bgcolor</u></h3>
+Sets the background color of the marquee.<br>
+For Example-<a href="BGCOLOUR.html">CLICK HERE</a>
+<h3><u>Direction</u></h3>
+Sets the direction of the marquee box. Values are left, right, up, down where the value indicates the direction of travel. Direction=left therefore moves the text from right to left on the screen.
+<br>For Example-<a href="direction.html ">CLICK HERE</a>
+<h3><u>Width</u></h3>
+This sets how wide the marquee should be.
+<br>For Example-<a href="width.html ">CLICK HERE</a>
+<h3><u>Loop</h3></u>
+This sets how many times the marquee should 'Loop' its text. Each trip counts as one loop.
+<br>For Example-<a href="loops.html ">CLICK HERE</a>
+<h3><u>Scrollamount</h3></u>
+This is how many pixels the text moves between 'frames'. So scrollamount=1 gives the slowest scroll speed.
+<br>For Example-<a href="scrollamt.html">CLICK HERE</a>
+<h3><u>Scrolldelay</h3></u>
+This sets the amount of time, in milliseconds, between 'frames'. Much like watching a replay of a video where every frame of the video would be paused for x number of milliseconds. So, 'Scrolldelay=1000' means a slow motion where every frame lasts one thousand milliseconds or one second.
+<br>For Example-<a href="scrolldel.html">CLICK HERE</a>
+<h3><u>Height</h3></u>
+This attribute indicates the marquee height.
+<br>For Example-<a href="height.html">CLICK HERE</a>
+<h3><u>HSpace</h3></u>
+HSPACE sets the horizontal space to the left and right of the marquee.
+<br>For Example-<a href="hspace.html">CLICK HERE</a>
+<h3><u>VSpace</u></h3>
+VSPACE sets the Vertical space to the up and down of the marquee.
+<br>For Example-<a href="vspace.html">CLICK HERE</a>
+<h3><u>Start & Stop</u></h3>
+start() function is used to start the marquee.<br>
+stop() function is used to stop the marquee.
+<br>For Example-<a href="start.html">CLICK HERE</a>
+</p>
+<p>A marquee element can contain arbitrary HTML, so in addition to text it could move one or more images, movie clips, or animated GIFs.
+</p>
+<h2><u>USABILITY PROBLEMS</u></h2>
+<P>Marquee can be distracting.The human eye is attracted to movement,and marquee text is constantly moving.
+As with the blink element, marquee-tagged images or text are not always completely visible on rendered pages, making printing such pages an inefficient (if not impossible) task; typically multiple attempts are required to capture all text that could be displayed where messages scroll or blink. The behavior="alternate" version of marquee makes text jitter back and forth but does not obscure any part of it if scrolling widths are set correctly.
+Because marquee text moves, links within it are more difficult to click than those in static text, depending on the speed and length of the scrolling. Users only get one chance every time it scrolls past. Also, scrolling text too fast can make it unreadable to some people, particularly those with visual impairments. This can easily frustrate users. To combat this, most client-side scripting allows marquees to be programmed to stop when the mouse is over them.
+</P>
+
+<br><br><br><br>
+
+<!-- Acknowledgement-->
+		<div id = "ack" style = "opacity : 1;">
+			<div style = "font-size : 44">
+			<a href = "Homepage.html"><img src = "HTML_Logo_50x50.png"/></a>
+			<a href = "Homepage.html" style = " color : #00d6d6; font-family : 'Monoton', cursive; size : 30; text-decoration: none;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+			</div>
+			<center>
+			<font face = "Segoe UI">Our Other Channels</font>
+			</center>
+			<br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> PRIVACY&emsp; . &emsp; TERMS</font>
+			<img src = "Facebook_50px.png" height = "24px" widhth = "24px" style = "margin-left : 440px;">
+			<img src = "Twitter_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Instagram_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+			<img src = "Play Button_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px; margin-right : 430px;">
+			
+			<img src = "Geography_50px.png" height = "24px" widhth = "24px" >
+			<font face = "Segoe UI" = "#00d6d6" style = "margin-left :10px;"> English<font>
+			<br><br>
+			<font face = "Segoe UI" color = "#00d6d6" size = "2"> CONTACT</font>
+			<br>
+			<center>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> &copy;2018 Pallav Jalan. IT - 2 (3rd Semester) Roll No. : 1706140 and the HTMLWiki</font>
+				<br>
+				<font face = "Century Gothic" color = "#00d6d6" size = "1"> are trademarks of Pallav Jalan (IT - 2) in KIIT UNIVERSITY. All Rights Reserved</font>
+			</center>
+		</div>
+		<script>
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width= '0';
+			document.getElementById('main').style.marginLeft= '0';
+		}
+		function openSlideMenu(){
+			document.getElementById('side-menu').style.width= '250px';
+			document.getElementById('main').style.marginLeft= '250px';
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<html>
+<head>
+ <link href = "https://fonts.googleapis.com/css?family=Monoton" rel = "stylesheet">
+<link rel = "stylesheet" href = "HTMLSpecialCharacterCSS.css">
+<style>
+#myDIV1 {
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: lightgreen
+}
+#myDIV {
+    width: 400px;
+    height: 400px;
+    border: 15px solid black;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    background-color: lightyellow
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    50% {border-bottom-color: lightblue;}
+}
+
+@keyframes mymove {
+    50% {border-bottom-color: lightblue;}
+}
+body {
+    background-image: url("p4.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+     margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-attachment: fixed;
+    background-color: lightgrey
+}
+.side-nav{
+      font-family: Segoe UI;
+      height: 100%
+      width:0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      opacity: 0.9;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+    .side-nav a{
+      padding: 10px 10px 10px 30px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #ccc;
+      display: block;
+      transition: 0.3s;
+    }
+    .side-nav a:hover{
+      color: #fff;
+    }
+    .side-nav .btn-close{
+      position: absolute;
+      top: 0;
+      right: 22px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    #head_wrapper {
+      max-width : 100%;
+      opacity : 1;
+    }
+
+    #header {
+      z-index: 1;
+      width: 100%;
+      height: auto;
+      padding: 0px 0px;
+      position: relative;
+      margin: 0 auto;
+      background-color: #002a32;
+      color: #00d6d6;
+      font-size : 40px;
+      font-family: 'Monoton', cursive;
+      opacity : 1;
+      padding-bottom : 10px;
+      padding-top : 10px;
+    }
+    .btn2 {
+      position : relative;
+      border : none;
+      height : 66px;
+      outline : 0;
+      display : inline-block;
+      margin: 0 auto;
+      background-color : #002a32;
+      color : #00d6d6;
+      padding-top : 20px;
+      padding-bottom : 10px;
+      padding-right : 60px;
+      text-align : center;
+      cursor : pointer;
+      font-size: 16px;
+      float : right;
+    }
+    .btn2:hover {
+      background-color : #002a32;
+      color:#ffffff;
+    }
+    #ack {  margin-top : 60px;
+    padding-left : 20px;
+    background-color : #002a32;
+    opacity : 1;
+    padding-top : 40px;
+    padding-bottom : 40px;
+    color : #00d6d6;
+    }
+
+</style>
+</head>
+<body >
+    <div id = "header_wrapper">
+      <div id = "header">
+        <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="formattingtags.html">FORMATTING TAGS</a>
+    <a href="IMAGE.html">IMAGES</a>
+    <a href="Intro.html">TABLES and LISTS</a>
+    <a href="links.html">LINKS</a>
+    <a href="frame.html">FRAMES</a>
+    <a href="Background.html">BACKGROUND</a>
+    <a href="Fonts.html">FONTS</a>
+    <a href="FORMASSIGNMENT.html">FORMS</a>
+    <a href="webpage.html">MARQUEE</a>
+    <a href="MULTI.html">MULTIMEDIA</a>
+    <a href="HTMLTagReference.html">TAG REFERENCE</a>
+    <a href="HTMLSpecialCharacter.html">SPECIAL CHARACTERS</a>
+    <a href="Pg1.html">HEADER</a>
+    <a href="Pg8.html">FOOTER</a>
+    <a href="Pg9.html">STYLE-SHEETS</a>
+  </div>
+        <img src = "HTML_Logo_50x50.png"/>
+       <a href = "Homepage.html" style = "text-decoration : none; color : #00d6d6;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+        <a href = "Aboutus.html"> <button class = "btn2" onclick = "Aboutus.html" ><font face = "Segoe UI"><img src = "d1.png" class = "img" /> &nbsp;ABOUT </font></button></a>
+      </div>
+    </div>
+
+<h1 style="font-family:Century Gothic;color:green;text-align:center;font-size:400%;"><U>Text Input Controls</U></h1>
+<p style="font-size:160%;font-family:Comic Sans MS;color: red;">There are three types of text input used on forms -</p>
+<div style="background-color:lightyellow">
+<uL style="list-style-type:square;font-size:160%;">
+<li><b>Single-line text input controls -</b>This control is used for items that
+require only one line of user input, such as search boxes or names. They are created using HTML &ltinput&gt tag.</li>
+<li><b>Password input controls - </b>This is also a single-line text input but it masks the character as soon as a user
+ enters it. They are also created using HTMl &ltinput&gt tag.</li>
+<li><b>Multi-line text input controls -</b> This is used when the user is required to give details that may be longer
+than a single sentence. Multi-line input controls are created using HTML &lttextarea&gt tag.
+</div>
+
+<h1 style="font-family:Comic Sans MS;color:olive;">Single-line text input controls</h1>
+<div style="background-color:lightblue">
+<p style="font-size:160%;font-family:Segoe UI;">This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &ltinput&gt tag.</P></div>
+<div id="myDIV">
+<h2>Example</h2>
+
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead><br>
+&lttitle>Text Input Control</title><br>
+&lt/head><br>
+&ltbody><br>
+&ltform ><br>
+First name: &ltinput type = "text" name = "first_name" /><br>
+<br>
+Last name: &ltinput type = "text" name = "last_name" /><br>
+&lt/form><br>
+&lt/body><br>
+</div>
+<div id="myDIV1">
+<h2>Output</h2>
+   <body>
+      <form >
+         First name: <input type = "text" name = "first_name" />
+         <br>
+         Last name: <input type = "text" name = "last_name" />
+      </form>
+   </body>
+</div>
+
+
+
+<h1 style="font-family:Comic Sans MS;color:olive;">Password input controls</h1>
+<div style="background-color:lightblue">
+<p style="font-size:160%;font-family:Segoe UI;" >This is also a single-line text input but it masks the character as soon as a user enters it.
+They are also created using HTML &ltinput>tag but type attribute is set to <b>password</b>.</P></div>
+<div id="myDIV">
+<h2>Example</h2>
+<p>Here is a basic example of a single-line password input used to take user password -</p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead><br>
+&lttitle>Password Input Control</title><br>
+&lt/head><br>
+&ltbody><br>
+&ltform ><br>
+User ID :
+&ltinput type = "text" name = "user_id" /><br>
+Password:
+&ltinput type = "password" name = "password" /><br>
+&lt/form><br>
+&lt/body><br>
+&lt/html>
+</div>
+<div id="myDIV1">
+<h2>Output</h2>
+      <form >
+         User ID : <input type = "text" name = "user_id" />
+         <br>
+         Password: <input type = "password" name = "password" />
+      </form>
+</div>
+
+
+<h1 style="font-family:Comic Sans MS;color:olive;">Multiple-Line Text Input Controls</h1>
+<div style="background-color:lightblue">
+<p  style="font-size:160%;font-family:Segoe UI;">This is used when the user is required to give details that may be longer than a single sentence. Multi-line
+ input controls are created using HTML &lttextarea> tag.</P></div>
+ <div id="myDIV">
+
+<h2>Example</h2>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead><br>
+&lttitle>Multiple-Line Input Control</title><br>
+&lt/head><br>
+&ltbody><br>
+&ltform><br>
+Description :
+&lttextarea rows = "5" cols = "50" name = "description"><br>
+Enter description here...<br>
+&lt/textarea><br>
+&lt/form><br>
+&lt/body><br>
+&lt/html>
+</div>
+<div id="myDIV1">
+<h2>Output</h2>
+
+
+      <form>
+         Description : <br />
+         <textarea rows = "5" cols = "50" name = "description">
+            Enter description here...
+         </textarea>
+      </form>
+
+</div>
+<h1><a href=inputtypes.html>Back</a></h1>
+<!-- Acknowledgement-->
+    <div id = "ack" style = "opacity : 1;">
+      <div style = "font-size : 44">
+      <a href = "Homepage.html"><img src = "HTML_Logo_50x50.png"/></a>
+      <a href = "Homepage.html" style = " color : #00d6d6; font-family : 'Monoton', cursive; size : 30; text-decoration: none;">HTMLWiki<sup><font size = "5">&reg;</font></sup></a>
+      </div>
+      <center>
+      <font face = "Segoe UI">Our Other Channels</font>
+      </center>
+      <br>
+      <font face = "Segoe UI" color = "#00d6d6" size = "2"> PRIVACY&emsp; . &emsp; TERMS</font>
+      <img src = "Facebook_50px.png" height = "24px" widhth = "24px" style = "margin-left : 440px;">
+      <img src = "Twitter_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+      <img src = "Instagram_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px;">
+      <img src = "Play Button_50px.png" height = "24px" widhth = "24px" style = "margin-left : 80px; margin-right : 430px;">
+
+      <img src = "Geography_50px.png" height = "24px" widhth = "24px" >
+      <font face = "Segoe UI" = "#00d6d6" style = "margin-left :10px;"> English<font>
+      <br><br>
+      <font face = "Segoe UI" color = "#00d6d6" size = "2"> CONTACT</font>
+      <br>
+      <center>
+        <font face = "Century Gothic" color = "#00d6d6" size = "1"> &copy;2018 Piyush Raj. IT - 2 (3rd Semester) Roll No. : 1706142 and the HTMLWiki</font>
+        <br>
+        <font face = "Century Gothic" color = "#00d6d6" size = "1"> are trademarks of Piyush Raj(IT - 2) in KIIT UNIVERSITY. All Rights Reserved</font>
+      </center>
+    </div>
+    <script>
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width= '0';
+      document.getElementById('main').style.marginLeft= '0';
+    }
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width= '250px';
+      document.getElementById('main').style.marginLeft= '250px';
+    }
+    </script>
+
+</body>
+</html>
